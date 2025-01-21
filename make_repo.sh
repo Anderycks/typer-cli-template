@@ -18,6 +18,7 @@ cp -r cli-app-name ../$APPNAME/$APPNAME
 cp -r tests ../$APPNAME
 cp LICENSE ../$APPNAME
 cp pyproject.toml ../$APPNAME
+cp .gitignore ../$APPNAME
 
 # Create a placeholder README.
 echo "# $APPNAME is a cli app.\n\nInitial commit. To be filled in." > ../$APPNAME/README.md
