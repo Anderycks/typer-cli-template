@@ -1,3 +1,5 @@
+"""Command-line interface for the application."""
+
 import typer
 
 from .app import main

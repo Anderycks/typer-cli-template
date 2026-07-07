@@ -3,7 +3,7 @@ requires = ["setuptools==75.6.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "{cli-app-name}"
+name = "cli-app-name"
 version = "0.1"
 description = "cli tool for [To be filled in.]"
 readme = "README.md"
@@ -21,4 +21,12 @@ classifiers = [
 ]
 
 [project.scripts]
-{cli-app-name}  = "{cli-app-name}.cli:command"
+cli-app-name = "cli_app_name.cli:command"
+
+[dependency-groups]
+dev = [
+    "black==24.10.0",
+]
+
+[tool.black]
+line-length = 78
