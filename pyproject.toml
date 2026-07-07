@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools==75.6.0"]
-build-backend = "setuptools.build_meta"
+requires = ["uv_build>=0.11.21,<0.12.0"]
+build-backend = "uv_build"
 
 [project]
 name = "cli-app-name"
@@ -30,3 +30,6 @@ dev = [
 
 [tool.black]
 line-length = 78
+
+[tool.uv.build-backend]
+module-root = ""
